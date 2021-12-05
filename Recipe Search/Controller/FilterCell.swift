@@ -8,5 +8,12 @@
 import UIKit
 
 class FilterCell: UICollectionViewCell {
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var lblView: UIView!
+    
+    func setup(text:String){
+        lblView.layer.borderWidth = 1
+        nameLbl.text = text
+    }
     
 }
