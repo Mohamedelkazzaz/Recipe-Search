@@ -77,7 +77,7 @@ enum Apis {
             "rid" : rid
             ] as [String : Any]
         
-        AF.request( Apis.recipeSearch.description,
+        AF.request( Apis.recipeSearch.description + "\(rid)",
                            method: .get,
                            parameters: par,
                            encoding: JSONEncoding.default
